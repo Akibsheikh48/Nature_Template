@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Save The World | Landing Page </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<header>
+			<a href="#" class="logo">World</a>
+			<div class="toggle"></div>
+		</header>
+		<img src="images/bg.jpg" class="bg">
+		<img src="images/bird.png" class="bird">
+		<div class="content">
+			<h2>We Can Save The<br><span>Earth</span></h2>
+			<p>“I believe the best way to begin reconnecting humanity's heart, mind, and soul to nature is for us to share our individual stories.”</p>
+			<a href="https://www.facebook.com/">Join Us</a>
+		</div>
+		<ul class="sci">
+			<li><a href="#"><img src="images/facebook.png"></a></li>
+			<li><a href="#"><img src="images/twitter.png"></a></li>
+			<li><a href="#"><img src="images/instagram.png"></a></li>
+		</ul>
+		<div class="textBlock">
+			<div class="block">
+				<h3>Nature</h3>
+				<p>"Nature is pleased with simplicity. And nature is no dummy."</p>
+			</div>
+			<div class="block">
+				<h3>Birds</h3>
+				<p>“Birds have always had the ability to bring me out of a dark space and provide relief in bad times.”</p>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		document.addEventListener('mousemove', function(e){
+			const bg = document.querySelector('.bg');
+			const bird = document.querySelector('.bird');
+			const content = document.querySelector('.content');
+
+			bg.style.width = 100 + e.PageX/100 +'%';
+			bg.style.height = 100 + e.PageX/100 +'%';
+
+			bird.style.right = 100 + e.PageX/2 + 'px';
+
+			content.style.left = 100 + e.PageX/2 + 'px';
+		})
+	</script>
+
+</body>
+</html>
